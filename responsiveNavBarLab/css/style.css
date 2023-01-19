@@ -1,0 +1,53 @@
+nav img {
+    width: 40px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0px;
+}
+
+nav > ul > li {
+    background-color: salmon;
+    padding: 12px;
+}
+
+nav > ul > li:hover {
+    background-color: white(60, 60, 138);
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown ul {
+    display: none;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0px;
+    position: absolute;
+    left: 0px;
+    top: 100%
+}
+
+.dropdown:hover ul {
+    display: flex;
+}
+
+.dropdown ul li {
+    background-color: lightsalmon;
+    padding: 12px;
+    width: 150%;
+}
+
+
+main img {
+    width: 200px;
+}
