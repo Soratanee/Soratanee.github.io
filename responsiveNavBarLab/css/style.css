@@ -20,7 +20,7 @@ nav > ul > li {
 }
 
 nav > ul > li:hover {
-    background-color: white(60, 60, 138);
+    background-color: white (76, 76, 139);
 }
 
 .dropdown {
@@ -28,17 +28,23 @@ nav > ul > li:hover {
 }
 
 .dropdown ul {
-    display: none;
     flex-direction: column;
     list-style-type: none;
     padding: 0px;
     position: absolute;
     left: 0px;
-    top: 100%
+    top: 75;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 0.5s,
+        visibility 0.5s;
 }
 
 .dropdown:hover ul {
-    display: flex;
+    opacity: 100%;
+    visibility: visible;
+    top: 0.5s;
 }
 
 .dropdown ul li {
@@ -50,4 +56,30 @@ nav > ul > li:hover {
 
 main img {
     width: 200px;
+}
+
+.textandImage {
+    align-items: center;
+    display: flex;
+    margin: 24px;
+}
+
+.textBlock {
+    flex: 2;
+    margin: 24px;
+}
+
+.imageBlock {
+    flex: 1;
+}
+
+.imageBlock img {
+    border-radius: 100%;
+    width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+    nav > ul {
+        flex-direction: column;
+    }
 }
