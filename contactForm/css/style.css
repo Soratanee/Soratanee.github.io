@@ -3,8 +3,8 @@
 }
 
 body {
-    background-color: #FAFAFA;
-    font-family: sans-serif;
+    background-color: lightblue;
+    font-family: cursive;
 }
 
 #gridContainer {
@@ -26,12 +26,13 @@ header {
     border: 2px solid DFDFDF;
     grid-area: content;
     padding: 32px;
+    border-radius: 10%;
 }
 
 form label {
     display: block;
     font-weight: bold; 
-    margin: 8px 0px;  
+    margin: 8px 0px;
 }
 
 form input[type=text],
