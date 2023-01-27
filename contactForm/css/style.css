@@ -47,33 +47,35 @@ textarea::placeholder {
     color: blue;
 }
 
+textarea {
+    font-family: cursive;
+}
+
 form input[type=submit] {
     background-color: #2c8cff;
     border: 0;
     border-radius: 4px;
-    color: lightblue;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 100%;
     padding: 16px 24px;
 }
 
-/* input:invalid { */
 input:invalid {
-    border-color: 3px solid red;
+    border: 3px solid red;
     box-shadow: 0px 0px 16px red;
+    animation: invalidWiggle 0.5s infinite;
 }
 
-@keyframes inyalidWiggle {
+@keyframes invalidWiggle {
     0%, 100% {
-        transform: translateX(0px) rotate(0eg);
-        background-color: white;
+        transform: translateX(0px);
     }
-
     25% {
-        transform: translateX(-15px) rotate(10deg);
-        background-color: red;
+        transform: translateX(-15px);
     }
-
     75% {
-        transform: translateX(15px) rotate(-10deg);
-
+        transform: translateX(15px);
     }
 }
