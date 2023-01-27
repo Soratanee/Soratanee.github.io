@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
 }
@@ -10,7 +11,7 @@ body {
 #formContainer {
     display: grid;
     grid-template-columns: 1fr 450px 1fr;
-    grid-template-areas:
+    grid-template-areas: 
         ". header ."
         ". content .";
 }
@@ -21,12 +22,12 @@ header {
 }
 
 header img {
-    height: 50px;
+    width: 250px;
     margin: 24px;
 }
 
 #formContent {
-    background-color:white;
+    background-color: white;
     border-radius: 12px;
     box-shadow: 0px 0px 16px #CCCCCC;
     grid-area: content;
@@ -37,16 +38,24 @@ header img {
     border-bottom: 2px solid #DDDDDD;
 }
 
+/* 
+    This code styles the 
+    boxes of inputs 
+*/
 input[type=text],
 input[type=date],
-select {
+input[type=email],
+input[type=password],
+select,
+#genderInputs > div,
+input[type=submit] {
     border: 2px solid #DDDDDD;
     border-radius: 4px;
     padding: 8px;
     margin: 4px;
 }
 
-#textInputContainer {
+#textInputsContainer {
     display: flex;
     flex-wrap: wrap;
     margin: 12px;
@@ -81,7 +90,8 @@ select {
     width: 100%;
 }
 
-#titleBdayPublicInputs > div label {
+#titleBdayPublicInputs > div label,
+#genderRadioButtons > label {
     font-size: 12px;
     font-weight: bold;
     margin-left: 5px;
@@ -89,4 +99,55 @@ select {
 
 #titleBdayPublicInputs input[type=checkbox] {
     margin: 16px 0px 16px 8px;
+}
+
+#genderRadioButtons {
+    margin: 12px;
+    text-align: left;
+}
+
+#genderInputs {
+    display: flex;
+}
+
+#genderInputs > div {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+#formFields p {
+    font-size: 12px;
+    margin: 16px;
+    text-align: left;
+}
+
+input[type=submit] {
+    background-color: #10a515;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: 0;
+    min-width: 175px;
+}
+
+a {
+    color: #0d77ff;
+    text-decoration: none;
+}
+
+#login {
+    display: block;
+    margin: 24px;
+}
+
+input:invalid,
+#phone0rEmailInput:invalid {
+    background-color: lightpink;
+    border-color: red;
+}
+
+input:not([type=submit]):valid,
+#phoneOrEmailInput:valid {
+    border-color: lightgreen;
 }

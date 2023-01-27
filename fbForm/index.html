@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <title>Facebook Form Exercise</title>
         <link href="css/style.css" rel="stylesheet">
     </head>
@@ -13,39 +13,45 @@
                 <img alt="facebook" src="assets/images/fbLogo.png">
             </header>
             <div id="formContent">
-                <div id="formHeader"></div>
-                    <h2>Create a new accout</h2>
+                <div id="formHeader">
+                    <h2>Create a new account</h2>
                     <p>It's quick and easy</p>
-                <div id="formFields"></div>
+                </div>
+                <div id="formFields">
                     <form>
-                        <div id="textInputContainer">
-                            <input
-                                id="firstNameInput" 
+                        <div id="textInputsContainer">
+                            <input 
+                                id="firstNameInput"
                                 type="text" 
                                 name="firstName"
-                                placeholder="First name">
-                            <input
-                                id="lasyNameInput" 
+                                placeholder="First name"
+                                minlength="2"
+                                maxlength="30"
+                                required
+                                >
+                            <input 
+                                id="lastNameInput"
                                 type="text" 
                                 name="lastName"
-                                placeholder="Last name">
-                            <input
-                                id="phoneOrEmailInput" 
-                                type="text" 
+                                placeholder="Last name"
+                                optional>
+                            <input 
+                                id="phoneOrEmailInput"
+                                type="email" 
                                 name="phoneOrEmail"
-                                placeholder="Mobile number or Email">
-                            <input
-                                id="passwordInput" 
-                                type="text" 
+                                placeholder="Mobile number or email">
+                            <input 
+                                id="passwordInput"
+                                type="password" 
                                 name="password"
                                 placeholder="New password">
                         </div>
                         <div id="titleBdayPublicInputs">
                             <div>
                                 <label>Preferred Title</label>
-                                <select id="tileSelector">
-                                    <option value=""disabled selector>
-                                        Select Title
+                                <select id="titleSelector" name="title">
+                                    <option value="" disabled selected>
+                                        Select title
                                     </option>
                                     <option value="none">None</option>
                                     <option value="mr">Mr.</option>
@@ -61,10 +67,66 @@
                             </div>
                             <div>
                                 <label>Make Public?</label>
-                                <input type="checkBox" name="isPublic">
+                                <input type="checkbox" name="isPublic">
                             </div>
                         </div>
+                        <div id="genderRadioButtons">
+                            <label>Gender</label>
+                            <div id="genderInputs">
+                                <div>
+                                    <label for="femaleRadio">
+                                        Female
+                                    </label>
+                                    <input 
+                                        id="femaleRadio"
+                                        type="radio" 
+                                        name="gender" 
+                                        value="female">
+                                </div>
+                                <div>
+                                    <label for="maleRadio">
+                                        Male
+                                    </label>
+                                    <input 
+                                        id="maleRadio"
+                                        type="radio"
+                                        name="gender"
+                                        value="male">
+                                </div>
+                                <div>
+                                    <label for="customRadio">
+                                        Custom
+                                    </label>
+                                    <input
+                                        id="customRadio"
+                                        type="radio"
+                                        name="gender"
+                                        value="custom">
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            People who use our service may have
+                            uploaded your contact information
+                            to Facebook. <a href=#>Learn more.</a>
+                        </p>
+                        <p>
+                            By clicking Sign Up, you agree
+                            to our <a href="#">Terms</a>, 
+                            <a href="#">Privacy Policy</a>,
+                            and <a href="#">Cookies Policy</a>. 
+                            You may
+                            receive SMS Notifications from 
+                            us and can opt out any time.
+                        </p>
+                        <input type="submit" value="Sign Up">
+                        <a 
+                            id="login" 
+                            href="#">
+                            Already have an account?
+                        </a>
                     </form>
+                </div>
             </div>
         </section>
     </body>
