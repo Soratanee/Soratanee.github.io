@@ -54,3 +54,26 @@ form input[type=submit] {
     color: lightblue;
     padding: 16px 24px;
 }
+
+/* input:invalid { */
+input:invalid {
+    border-color: 3px solid red;
+    box-shadow: 0px 0px 16px red;
+}
+
+@keyframes inyalidWiggle {
+    0%, 100% {
+        transform: translateX(0px) rotate(0eg);
+        background-color: white;
+    }
+
+    25% {
+        transform: translateX(-15px) rotate(10deg);
+        background-color: red;
+    }
+
+    75% {
+        transform: translateX(15px) rotate(-10deg);
+
+    }
+}
