@@ -8,7 +8,6 @@ body {
 }
 
 #gridContainer {
-    display: grid;
     grid-template-columns: 1fr 600px 1fr;
     grid-template-areas:
         ". header ."
@@ -44,7 +43,7 @@ form select {
 }
 
 textarea::placeholder {
-    color: blue;
+    color: grey;
 }
 
 textarea {
@@ -53,9 +52,9 @@ textarea {
 
 form input[type=submit] {
     background-color: #2c8cff;
+    color: white;
     border: 0;
     border-radius: 4px;
-    color: white;
     font-size: 18px;
     font-weight: bold;
     min-width: 100%;
@@ -77,5 +76,20 @@ input:invalid {
     }
     75% {
         transform: translateX(15px);
+        background-color:black
     }
 }
+
+@media screen and (max-width:600px) {
+    /* body {
+        background-color: red;
+    } */
+
+    #gridContainer {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "content"
+    }
+}
+
