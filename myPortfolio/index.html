@@ -26,31 +26,31 @@
       <section id="hero">
         <h1>Welcome!</h1>
       </section>
-      <section id="contentContainer">
-        <section class="threeCards">
+        <div class="row">
+          <div class="col">
           <div class="card">
-            <h3>Interesting Stuff</h3>
-            <p>
-              Sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
+            <img src="assets/images/relax.jpg" 
+            class="card-img-top" 
+            alt="...">
+            <h3>My Art</h3>
+            <a href="#">LEARN MORE</a>
+        </div>
+        <div class="row">
+          <div class="col">
+          <div class="card">
+            <img src="assets/images/japan.jpg" 
+            class="card-img-top" 
+            alt="...">
+            <h3>blog</h3>
             <a href="#">LEARN MORE</a>
           </div>
-          <div class="card">
-            <h3>Interesting Stuff</h3>
-            <p>
-              Lorem ipsum dolor sit amet,
-              consectetur adipisicing elit,
-              sed do eiusmod tempor.
-            </p>
-            <a href="#">LEARN MORE</a>
-          </div>
-          <div class="card">
-            <h3>Interesting Stuff</h3>
-            <p>
-              Sunt in culpa qui officia deserunt
-              mollit anim id est laborum.
-            </p>
+            <div class="row">
+          <div class="col">
+          <div class="card my-3">
+            <img src="assets/images/nightwalks.jpg" 
+            class="card-img-top" 
+            alt="...">
+            <h3>About me</h3>
             <a href="#">LEARN MORE</a>
           </div>
         </section>
@@ -59,10 +59,45 @@
         </section>
         <section id="carousel">
           <!-- TODO: Bootstrap Carousel goes here -->
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="assets/images/mark-tegethoff-NMLv5HQZnK4-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/david-brooke-martin-lFTtQqVfx6g-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="assets/images/tatiana-rodriguez-5bXUxtRXi8w-unsplash.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" 
+            type="button" 
+            data-bs-target="#carouselExampleIndicators" 
+            data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" 
+              aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" 
+            type="button" 
+            data-bs-target="#carouselExampleIndicators" 
+            data-bs-slide="next">
+              <span class="carousel-control-next-icon" 
+              aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
         </section>
         <section class="twoCards">
           <div class="card">
-            <h3>More Interesting Stuff</h3>
+            <h3>Gift Shops</h3>
             <p>
               Lorem ipsum dolor sit amet,
               consectetur adipisicing elit,
