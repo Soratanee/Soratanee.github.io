@@ -154,36 +154,18 @@ nav h2 {
   background-position: center;
   background-attachment: fixed;
   height: 80vh;
+  color: cornflowerblue
 }
 
 /****************************************************************************
   Link styles
 ****************************************************************************/
 
-#hero a,
-.card a {
-  color: cornflowerblue;
-  border: 2px solid cornflowerblue;
-  border-radius: 24px;
-  display: inline-block;
-  padding: 8px 16px;
-  margin-top: 12px;
-  min-width: 150px;
-  transition: transform 0.25s;
-}
 
-#hero a:hover,
-.card a:hover {
-  transform: scale(1.05);
-}
 
 /****************************************************************************
   Card styles
 ****************************************************************************/
-.threeCards,
-.twoCards {
-  display: flex;
-}
 
 .card {
   border: 3px solid cornflowerblue;
@@ -194,11 +176,6 @@ nav h2 {
   text-align: center;
   box-shadow: 4px 4px 8px 0px grey;
   flex: 1;
-}
-
-.card p {
-  font-size: 18px;
-  min-height: 100px;
 }
 
 /****************************************************************************
