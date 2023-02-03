@@ -1,0 +1,95 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightblue;
+    font-family: cursive;
+}
+
+#gridContainer {
+    grid-template-columns: 1fr 600px 1fr;
+    grid-template-areas:
+        ". header ."
+        ". content .";
+}
+
+header {
+    grid-area: header;
+    padding: 48px;
+    text-align: center;
+}
+
+#formContainer {
+    background-color: white;
+    border: 2px solid DFDFDF;
+    grid-area: content;
+    padding: 32px;
+    border-radius: 10%;
+}
+
+form label {
+    display: block;
+    font-weight: bold; 
+    margin: 8px 0px;
+}
+
+form input[type=text],
+form textarea,
+form select {
+    padding: 12px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+textarea::placeholder {
+    color: grey;
+}
+
+textarea {
+    font-family: cursive;
+}
+
+form input[type=submit] {
+    background-color: #2c8cff;
+    color: white;
+    border: 0;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    min-width: 100%;
+    padding: 16px 24px;
+}
+
+input:invalid {
+    border: 3px solid red;
+    box-shadow: 0px 0px 16px red;
+    animation: invalidWiggle 0.5s infinite;
+}
+
+@keyframes invalidWiggle {
+    0%, 100% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(-15px);
+    }
+    75% {
+        transform: translateX(15px);
+        background-color:black
+    }
+}
+
+@media screen and (max-width:600px) {
+    /* body {
+        background-color: red;
+    } */
+
+    #gridContainer {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "content"
+    }
+}
+
