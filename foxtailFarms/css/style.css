@@ -94,7 +94,9 @@ nav {
   align-items: center;
   display: flex;
   margin: 0 24px;
+  flex: 1;
 }
+
 
 footer {
   display: flex;
@@ -150,7 +152,10 @@ nav h2 {
 
 #hero {
   background-image: url("../assets/images/farm.jpg");
-  background-position: center center;
+  background-size: cover;
+  background-attachment: 3px;
+  display: flex;
+  flex: 1;
   height: 80vh;
 }
 
@@ -213,6 +218,9 @@ nav h2 {
   text-align: center;
 }
 
+carousel-item {
+  max-height: fit-content;
+}
 /****************************************************************************
   Media Query - Mobile Breakpoint
 ****************************************************************************/
