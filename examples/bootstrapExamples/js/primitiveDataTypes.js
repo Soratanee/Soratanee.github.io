@@ -6,7 +6,7 @@
 console.log("Hello World");
 
 // Data Type: Number
-console.log(4)
+console.log("4")
 console.log(10000);
 
 // Math operator
