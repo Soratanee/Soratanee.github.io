@@ -19,4 +19,4 @@ console.log(10 /2);
 
 // String operator
 // concatenation (+) (putting two Strings together)
-console.log("Hello" + "World" + "!!!!");
+console.log("Hello" + "World" + 64);
