@@ -38,7 +38,7 @@ function convertToDaysLeft(milliseconds) {
 
     let daysLeft = convertToDaysLeft(timeLeft);
     let hoursLeft = convertToHoursLeft(timeLeft);
-    let mintuesLeft = convertToMintuesLeft(timeLeft);
+    let mintuesLeft = convertToMinutesLeft(timeLeft);
     let secondsLeft = convertToSecondsLeft(timeLeft);
 
     countdown.innerHTML =
