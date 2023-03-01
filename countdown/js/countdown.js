@@ -26,7 +26,7 @@ function convertToDaysLeft(milliseconds) {
 
   // Start writing code here
 
-  let deadline = new Date("November 9, 2023 00:00:00");
+  let deadline = new Date("March 24, 2023 00:00:00");
 
   let countdown = document.getElementById("countdown");
   countdown.innerHTML = "";

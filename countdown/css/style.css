@@ -8,8 +8,10 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(../assets/images/pexels-aleksandar-pasaric-1586981.jpg);
+    background-image: url(../assets/images/Resident\ evil\ 4.jpeg);
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    color: red;
+    font-family: monospace;
 }
