@@ -10,9 +10,21 @@ function openLightbox() {
     lightbocCenter.classList.add("display");
     lightbox.src = this.src;
 }
+// let coffeeImage = document.getElementById("coffeeImage");
+//coffeeImage.onclick = openLightbox; 
+// let coffeeImage = document.getElementById("coffeeImage");
+//coffeeImage.onclick = openLightbox; 
+// let coffeeImage = document.getElementById("coffeeImage");
+//coffeeImage.onclick = openLightbox; 
+// let coffeeImage = document.getElementById("coffeeImage");
+//coffeeImage.onclick = openLightbox; 
 
-let coffeeImage = document.getElementById("coffeeImage");
-coffeeImage.onclick = openLightbox; 
+let galleryImages = document.getElementsByClassName("galleryImage");
+for(let i = 0; i < galleryImages.length; i++) {
+    let galleryImage = galleryImage [i];
+    galleryImage.onclick = openLightbox;
+}
+
 
 function closeLightbox() {
     lightboxContainer.classList.remove("display");
