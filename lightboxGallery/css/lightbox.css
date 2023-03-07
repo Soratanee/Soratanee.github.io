@@ -92,3 +92,16 @@
     height: auto;
   }
 }
+
+#topNav {
+  display: flex;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  direction: ltr;
+}
+
+#new {
+  background: red;
+  color: white;
+  border-radius: 50px;
+}
