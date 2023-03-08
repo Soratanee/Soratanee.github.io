@@ -4,22 +4,34 @@
     <title>Lightbox Gallery</title>
     <link rel="stylesheet" href="css/gallery.css">
     <link rel="stylesheet" href="css/lightbox.css">
+    <link rel="stylesheet" href="css/netflix.css">
   </head>
   <body>
-    <nav id="topNav">
-      <ul id="new">NEW!</ul>
-      <ul>Plans now start at $6.99</ul>
-      <ul id="learnMore">Learn more</ul>
-    </nav>
-    <div id="hero1">
-        <h1>
-        </h1>
+  <div id="banner">
+    <div id="new">NEW!</div>
+    <div>Plans now start at <span id="price">$6.99</span></div>
+    <div>
+        <a href="#">Learn More></a>
+      </div>
     </div>
-    <div id="heroImage">
-      <nav>
-        <img src="https://infoguidenigeria.com/wp-content/uploads/2021/10/netflix-library-photo-scaled-1.jpg">
+  <div id="hero">
+      <nav id="navBar">
+          <img
+            src="images/Netflix_Logo_RGB.png"
+            alt="netflix logo">
+          <button class="clearButton">English</button>
+          <button class="redButton">Sign In</button>
       </nav>
-    </div>
+      <div id="heroContent">
+          <h1>Unlitmited movies, TV shows, and more.</h1>
+          <h3>Watch anywhere. Cancel anytime.</h3>
+          <p>Ready to watch? Enter your email to create or restart your memebership.</p>
+          <form>
+            <input type="email" name="emailAddress" placeholder="Email Address">
+            <input type="submit" class="redButton" value="Get Started">
+          </form>
+      </div>
+  </div>
     <!-- Gallery/Image Code -->
   <div id="gallery">
       <img class="galleryImage" src="images/link.jpeg" alt="Link">
