@@ -19,9 +19,9 @@ function openLightbox() {
 // let coffeeImage = document.getElementById("coffeeImage");
 //coffeeImage.onclick = openLightbox; 
 
-let galleryImages = document.getElementsByClassName("galleryImage");
+let galleryImages = document.getElementsByClassName("galleryImages");
 for(let i = 0; i < galleryImages.length; i++) {
-    let galleryImage = galleryImage [i];
+    let galleryImage = galleryImages[i];
     galleryImage.onclick = openLightbox;
 }
 
