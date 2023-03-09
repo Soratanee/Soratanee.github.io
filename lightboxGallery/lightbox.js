@@ -7,7 +7,7 @@ let lightboxCloser =
     document.getElementById("lightboxCloser");
 
 function openLightbox() {
-    lightbocCenter.classList.add("display");
+    lightboxContainer.classList.add("display");
     lightbox.src = this.src;
 }
 // let coffeeImage = document.getElementById("coffeeImage");
@@ -21,8 +21,8 @@ function openLightbox() {
 
 let galleryImages = document.getElementsByClassName("galleryImages");
 for(let i = 0; i < galleryImages.length; i++) {
-    let galleryImage = galleryImages[i];
-    galleryImage.onclick = openLightbox;
+    let galleryImages = galleryImages[i];
+    galleryImages.onclick = openLightbox;
 }
 
 
@@ -36,7 +36,7 @@ lightboxBackground.onclick = closeLightbox;
 
 
 let closers = document.getElementsByClassName('closer');
-for (let i = 0; i < closer.length; i++) {
+for (let i = 0; i < closers.length; i++) {
     let closer = closers[i];
     closer.onclick = closeLightbox;
 }
