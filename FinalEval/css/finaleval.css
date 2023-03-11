@@ -1,0 +1,128 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+#hero {
+    background-image: 
+        radial-gradient(transparent, black),
+        url("../assets/images/backgroundLarge.jpg");
+    min-height: 500px;
+    box-shadow: inset 0px 0px 200px 75px black;
+    padding: 48px;
+}
+
+#navBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#navBar img {
+    width: 150px;
+    margin-right: auto;
+}
+
+.emailAddress {
+    border: 1px solid grey;
+    background-color: rgba(0,0,0,5);
+    color: white;
+}
+.clearButton {
+    border: none;
+    background-color: #0063e5;
+    border-radius: 10px;
+    color: white;
+    padding: 12px 24px;
+    margin: 0px 24px;
+    font-size: 16px;
+}
+
+.redButton {
+    border: 1px solid white;
+    background-color: rgba(0,0,0,5);
+    border-radius: 2px;
+    color: white;
+    padding: 12px 24px;
+    margin: 0px 24px;
+    font-size: 16px;
+}
+
+.bundle {
+    border: none;
+    background-color: #0063e5;
+    border-radius: 2px;
+    color: white;
+    padding: 12px 24px;
+    margin: 0px 24px;
+    font-size: 16px;
+}
+
+#heroContent {
+    text-align: center;
+    max-width: 640px;
+    margin: 100px auto;
+}
+
+#heroContent h1 {
+    font-size: 60px;
+}
+
+#heroContent h3 {
+    font-size: 32px;
+    font-weight: normal;
+}
+
+#heroContent input[type="email"] {
+    height: 48px;
+    width: 500px;
+    margin-bottom: 16px;
+}
+
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#gallery img {
+    height: 200px;
+    margin: 12px;
+    flex: 1 0 auto;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: opacity 0.25s, transform 0.25s;
+}
+
+#gallery img:hover {
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 480px) {
+    #gallery img {
+      height: auto;
+      width: 100%;
+    }
+}
+
+.bottomLogo {
+    width: 200px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moreLogo {
+    width: 550px;
+    margin-right:auto
+}
